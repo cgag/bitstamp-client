@@ -9,7 +9,7 @@ and `fail-for` functions helpful for handling error cases when using the async a
 
 ## Usage
 
-Clojars: 
+Clojars: [io.curtis/bitstamp-client "0.1.0"]
 
 ;; get current ticker
 (defn ticker [] ...)
