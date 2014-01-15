@@ -1,8 +1,8 @@
-(defproject io.curtis/bitstamp-client "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+(defproject io.curtis/bitstamp-client "0.1.0"
+  :description "Client for the public (currently, private in the future) bitstamp api."
+  :url "https://github.com/cgag/bitstamp-client"
+  :license {:name "Apache license, Version 2.0"
+            :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
                  [cheshire "5.3.1"]
