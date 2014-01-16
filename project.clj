@@ -1,4 +1,4 @@
-(defproject io.curtis/bitstamp-client "0.1.0-SNAPSHOT"
+(defproject io.curtis/bitstamp-client "0.1.1"
   :description "Client for the public (currently, private in the future) bitstamp api."
   :url "https://github.com/cgag/bitstamp-client"
   :license {:name "Apache license, Version 2.0"
