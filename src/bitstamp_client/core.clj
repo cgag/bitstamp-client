@@ -59,7 +59,8 @@
               (fn [resp]
                 (if (success? resp)
                   (deliver p (json/parse-string (:body resp) true))
-                  (deliver p resp))))))
+                  (deliver p resp))))
+    p))
 
 (defn eur-usd-conv-rate-async
   "Return map of currenty :buy and :sell conversion rates"
@@ -69,7 +70,8 @@
               (fn [resp]
                 (if (success? resp) 
                   (deliver p (json/parse-string (:body resp) true))
-                  (deliver p resp))))))
+                  (deliver p resp))))
+    p))
 
 ;; TODO: better exceptions, more info.  Use slingshot?  Look at clj-http.
 (defn fail-for [api resp]
