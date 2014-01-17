@@ -39,7 +39,9 @@
   [& [group]]
   (let [p (promise)]
     (http/get order-books-uri 
-              {:query-params {:group (if group 1 0)}}
+              {:query-params {:group (cond (nil? group)    1
+                                           (= group true)  1
+                                           (= group false) 0)}}
               (fn [resp]
                 (if (success? resp)
                   (deliver p (json/parse-string (:body resp) true))
